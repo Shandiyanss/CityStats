@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CityStats</title>
+</head>
+<body>
+    <div class="box">
+         <div id="wrapper">
+            <div id="city">
+                <h2 id="name">Select a city</h2>
+        
+        <select id="input">
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Kashmir">Kashmir</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Goa">Goa</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Kanpur">Kanpur</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Ranchi">Ranchi</option>
+            <option value="Tiruchirapalli">Tirchy</option>
+            <option value="Nellore">Nellore</option>
+            <option value="Jalandhar">Jalandhar</option>
+            <option value="Siliguri">Siligiri</option>
+            <option value="Guntur">Guntur</option>
+            <option value="Noida">Noida</option>
+            <option value="Belagavi">Belagavi</option>
+            <option value="Mangaluru">Mangaluru</option>
+            <option value="Jalgaon">Jalgaon</option>
+            <option value="Sikar">Sikar</option>
+            <option value="Meerut">Meerut</option>
+        </select>
+
+        <div>
+        <button type="submit">Show Stats</button>
+        </div>
+
+    
+
+    <div id="result"></div>
+
+    </div>
+</div>
+
+    </div>
+            
+
+<script>
+    const button = document.querySelector('button')
+    button.addEventListener('click',displaystats)
+    function displaystats(){
+        const input=document.getElementById("input")
+        const city = input.options[input.selectedIndex].value
+        let population=0,literacyRate=0,language=''
+        switch(city){
+            case 'Bengaluru':
+                Population = 8443675;
+                literacyRate = 88.71;
+                language ='Kannada';
+                break
+            case 'Chennai':
+                Population = 8.7;
+                literacyRate = 90.2;
+                language = 'Tamil' ;
+                break
+            case 'Delhi':
+                Population= 32;
+                literacyRate= 88.7;
+                language='Hindi';
+                break   
+            case 'Kashmir':
+                Population: 7;
+                literacyRate: 68.7;
+                language : 'Kashmiri';
+                break  
+            case 'Bihar':
+                Population: 124;
+                literacyRate: 70.9;
+                language: 'Hindi';
+                
+                break   
+            case 'Andhra Pradesh':
+                Population: 54;
+                literacyRate: 67.4;
+                language: 'Telugu';
+                 
+                break 
+            case 'Goa':
+                Population: 1.5;
+                literacyRate: 88.7;
+                language: 'Konkani';
+                break   
+            case 'Kerala':
+                Population: 35;
+                literacyRate: 96.2;
+                language: 'Malayalam';
+                break   
+            case 'Mumbai':
+                Population: 21;
+                literacyRate: 89.7;
+                language: 'Marathi';
+                break  
+            case 'Kanpur':
+                Population: 3;
+                literacyRate: 79.7;
+                language: 'Hindi';
+
+
+                break   
+            case 'Jaipur':
+                Population: 4;
+                literacyRate: 84.3;
+                language: 'Hindi';
+                break   
+            case 'Ranchi':
+                Population: 1.5;
+                literacyRate: 87.7;
+                language: 'Hindi';
+
+
+                break   
+            case 'Tiruchirapalli':
+                Population: 1;
+                literacyRate: 91.4;
+                language: 'Tamil';
+                break   
+            case 'Nellore':
+                Population: 0.7;
+                literacyRate: 83.6;
+                language: 'Telugu';
+                break   
+            case 'Jalandhar':
+                Population: 0.9;
+                literacyRate: 85.5;
+                language: 'Punjabi';
+                break   
+            case 'Siliguri':
+               Population: 0.7;
+               literacyRate: 83.0;
+               language: 'Bengali';
+                break  
+            case 'Guntur':
+                Population: 0.8;
+                literacyRate: 84.2;
+                language: 'Telugu';
+                break   
+            case 'Noida':
+                Population: 0.7; 
+                literacyRate: 88.6;     
+                language: 'Hindi'; 
+                break  
+            case 'Belagavi':
+                Population: 0.6;
+                literacyRate: 89.0;
+                language: 'Kannada';
+                
+                break
+            case 'Mangalum':
+                Population: 0.035;
+                literacyRate: 95.0;
+                language: 'Malayalam';
+                break
+            case 'Jalgaon':
+                Population: 0.5;
+                literacyRate: 79.9;
+                language: 'Marathi';
+                break
+            case 'Sikar':
+                Population: 0.25;
+                literacyRate: 76.2;
+                language: 'Hindi';
+                break
+            case 'Meerut':
+               Population: 1.5;
+               literacyRate: 85.1;
+               language: 'Hindi' ;
+               break                                                                                                
+        }
+        let text = `The Indian city of ${city} has a population of ${Population} million. Language spoken is ${language} and literacy rate is ${literacyRate}%`
+        console.log(text)
+        let resultdiv = document.createElement('div')
+        resultdiv.id='result'
+
+        document.getElementById('wrapper').appendChild(resultdiv)
+
+        document.getElementById('result').innerHTML = text
+        
+    }
+</script>
+
+
+   
+</body>
+</html>

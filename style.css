@@ -1,0 +1,77 @@
+body{
+    background: color ACF 7C 1px;;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#heading{
+    align-items: center;
+    font-display:block;
+}
+.box{
+    background-color: #61304b;
+    margin:100px auto;
+    padding:10px 20px 90px;
+    border: 1.5px solid rgb(8, 52, 17);
+    width:400px;
+    height: 300px;
+
+}
+.wrapper{
+    padding:2px;
+
+}
+#name{
+    font-family: cursive;
+    text-align: center;
+    color:aliceblue;
+}
+.conversion{
+    display: block;
+
+}
+#converter{
+    width:100%;
+    font-size: medium;
+    margin:1px 0px 1px;
+    border: 2px solid rgb(164, 229, 26);
+    box-shadow: 2px;
+    border-radius: 2px;
+    padding:10px 8px;
+    
+
+}
+.btn{
+    text-align: center;
+}
+button{
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    margin-top: auto;
+    height:50px;
+    margin:50px 0px 20px 145px;
+    padding:10px 10px;
+    border:1px solid rgb(75, 233, 17);
+    border-radius: 8px;
+
+}
+#result{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    font-size: large;
+}
+#input{
+    align-items: center;
+    padding:15px;
+    margin:10px 20px 20px 120px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border:2px solid black;
+    color: rgb(235, 7, 113);
+
+}
+
